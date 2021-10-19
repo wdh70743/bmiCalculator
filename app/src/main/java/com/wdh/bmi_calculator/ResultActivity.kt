@@ -23,7 +23,7 @@ class ResultActivity : AppCompatActivity() {
         val height = intent.getIntExtra("height", 0)
         val weight = intent.getIntExtra("weight", 0)
 
-        val bmi = weight / (height / 100.0).pow(2.0)
+        val bmi = weight / ((height / 100.0).pow(2.0))
 
         val resultText = when{
             bmi >= 35.0 -> "고도 비만"
